@@ -1,0 +1,32 @@
+header {
+    margin-bottom: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>a {
+    margin: 30px 0;
+}
+
+nav a img {
+    width: 62px;
+    height: 19px;
+}
+
+nav ul {
+    display: flex;
+    padding-top: 16px;
+}
+
+nav ul li {
+    padding-left: 68px;
+}
+
+nav li a:hover {
+    border-top: solid 2px var(--main-color);
+    padding-top: 12px;
+    color: var(--main-color);
+}

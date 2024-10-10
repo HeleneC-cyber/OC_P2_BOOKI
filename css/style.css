@@ -1,3 +1,10 @@
+/* ____Importation des fichiers css____ */
+@import url(./normalize.css);
+@import url(./header.css);
+
+
+
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -7,6 +14,10 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    /* rajoutés pour la couleur des textes et bordures : */
+    --filter-border-color: #D9D9D9;
+    --text-light-color: #FFFFFF;
+    --text-dark-color: #000000;
 }
 
 .fa-solid {
@@ -25,9 +36,27 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
 a {
     color: inherit;
     text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .section-title {
@@ -57,6 +86,102 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
+/* ____Info-group____ */
+
+.info-group > p {
+    margin : 8px 0 35px;
+}
+/* ____Info-group > Search-bar____ */
+.search-bar {
+    display: flex;
+    height: 49px;
+    width: fit-content;
+}
+
+.icon-location {
+    background-color: var(--main-bg-color);
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border : solid 1px var(--main-bg-color);
+    border-radius: 15px 0 0 15px;
+}
+
+.text-location {
+    width: 195px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 24px;
+    border-top: solid 1px var(--main-bg-color);
+    border-bottom: solid 1px var(--main-bg-color);
+    border-left: none;
+    border-right: none;
+}
+
+.btn-location {
+    background-color: var(--main-color);
+    padding: 0 15px;
+    border: solid 1px var(--main-color);
+    border-radius: 0 15px 15px 0;
+
+}
+
+.btn-location span {
+    font-size: 18px;
+    color: var(--text-light-color);
+}
+
+.btn-location svg {
+    display: none;
+}
+
+/* ____Info-group > Filter-bar____ */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    margin : 35px auto;
+}
+
+.filter-bar ul {
+    display: flex;
+}
+
+.filter-bar ul li {
+    margin-left: 15px;
+}
+
+.filter-bar .btn-filter {
+    display: flex;
+    align-items: center;
+    padding: 15px 19px;
+    border: solid 2px var(--filter-border-color);
+    border-radius: 25px;
+}
+
+.filter-bar .btn-filter:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.filter-bar button svg {
+margin-right: 10px;
+}
+
+/* ____Info-group > Info-bar____ */
+.info-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    
+}
+.info-bar svg {
+    margin-right: 10px;
+}
+
+
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
