@@ -1,6 +1,7 @@
 /* ____Importation des fichiers css____ */
 @import url(./normalize.css);
 @import url(./header.css);
+@import url(./footer.css);
 
 
 
@@ -80,9 +81,11 @@ button {
 .card-title {
     font-size: 16px;
 }
+
 .card-subtitle {
     font-size: 14px;
 }
+
 /* ____Afficher plus (de Hébergements), classe plus généraliste si besoin de réutilisation pour les activités par ex____ */
 .link-more {
     font-size: 18px;
@@ -99,9 +102,10 @@ button {
 
 /* ____Info-group____ */
 
-.info-group > p {
-    margin : 8px 0 35px;
+.info-group>p {
+    margin: 8px 0 35px;
 }
+
 /* ____Info-group > Search-bar____ */
 .search-bar {
     display: flex;
@@ -115,7 +119,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    border : solid 1px var(--main-bg-color);
+    border: solid 1px var(--main-bg-color);
     border-radius: 15px 0 0 15px;
 }
 
@@ -151,7 +155,7 @@ button {
 .filter-bar {
     display: flex;
     align-items: center;
-    margin : 35px auto;
+    margin: 35px auto;
 }
 
 .filter-bar ul {
@@ -175,7 +179,7 @@ button {
 }
 
 .filter-bar button svg {
-margin-right: 10px;
+    margin-right: 10px;
 }
 
 /* ____Info-group > Info-bar____ */
@@ -183,8 +187,9 @@ margin-right: 10px;
     display: flex;
     align-items: center;
     margin-bottom: 35px;
-    
+
 }
+
 .info-bar svg {
     margin-right: 10px;
 }
@@ -230,9 +235,11 @@ margin-right: 10px;
 .hebergements .card-content {
     padding: 9px 10px 10px;
 }
+
 .hebergements .card-txt {
     margin-bottom: 8px;
 }
+
 .hebergements .card-title {
     margin-bottom: 8px;
 }
@@ -283,6 +290,35 @@ margin-right: 10px;
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+
+/* ____Section Activités à Marseille____ */
+.activities {
+    padding: 30px;
+    margin: 35px 0;
+}
+
+.activities-cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px
+}
+
+.activities-card {
+    padding: 0;
+}
+
+.activities-img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activities-card .card-title {
+    padding: 20px 19px;
 }
 
 
