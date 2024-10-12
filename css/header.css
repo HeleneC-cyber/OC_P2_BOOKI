@@ -18,15 +18,51 @@ nav a img {
 
 nav ul {
     display: flex;
-    padding-top: 16px;
 }
 
 nav ul li {
-    padding-left: 68px;
+    margin-left: 68px;
+}
+
+nav li a {
+    display: block;
+    padding-top: 14px;
+    border-top: solid 2px transparent;
 }
 
 nav li a:hover {
     border-top: solid 2px var(--main-color);
-    padding-top: 12px;
     color: var(--main-color);
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav>a img {
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        text-align: center;
+        width: 50%;
+    }
+
+    nav li a {
+        padding-top: 0;
+        border-top: none;
+        padding-bottom: 15px;
+        border-bottom: solid 2px var(--main-bg-color);
+    }
+
+    nav li a:hover {
+        padding-top: 0;
+        border-top: none;
+        border-bottom: solid 2px var(--main-color);
+        padding-bottom: 15px;
+        color: var(--main-color);
+    }
+
 }

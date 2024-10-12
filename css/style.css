@@ -42,6 +42,7 @@ body {
 
 h1 {
     font-size: 22px;
+    line-height: 25.83px;
 }
 
 h3 {
@@ -51,6 +52,10 @@ h3 {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+img {
+    display: block;
 }
 
 /* p {
@@ -81,6 +86,7 @@ button {
 
 .card-title {
     font-size: 16px;
+    line-height: 18.78px;
 }
 
 .card-subtitle {
@@ -156,7 +162,7 @@ button {
 .filter-bar {
     display: flex;
     align-items: center;
-    margin: 35px auto;
+    margin: 35px 0;
 }
 
 .filter-bar ul {
@@ -194,7 +200,6 @@ button {
 .info-bar svg {
     margin-right: 10px;
 }
-
 
 
 
@@ -245,9 +250,6 @@ button {
     margin-bottom: 8px;
 }
 
-
-
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -282,7 +284,7 @@ button {
 
 .populaires-cards .card-title {
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .populaires-cards .card-subtitle {
@@ -292,6 +294,8 @@ button {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+
 
 
 /* ____Section Activités à Marseille____ */
@@ -309,6 +313,8 @@ button {
 
 .activities-card {
     padding: 0;
+    height: 439px;
+
 }
 
 .activities-img {
@@ -318,11 +324,21 @@ button {
     border-top-right-radius: 20px;
 }
 
-.activities-card .card-title {
-    padding: 20px 19px;
+.activities-card .card-title-container {
+    padding-left: 19px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+
 }
 
 
+
+
+/* ____Message d'erreur pour écran<320px____ */
+.error-message {
+    display: none;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -330,6 +346,21 @@ button {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    /* ____Responsive tablette de info-group____ */
+    .filter-bar {
+        display: block;
+    }
+
+    .filter-bar ul {
+        margin-top: 20px;
+    }
+
+    .filter-bar ul li:first-child {
+        margin-left: 0;
+    }
+
+    /* ____Responsive tablette de hebergements-and-populaires____ */
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -347,22 +378,93 @@ button {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        /* ____Rajouté pour corriger la taille du a p/r à la card____ */
+        margin-top: 20px;
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 31.8%;
     }
 
-    .populaires-cards .card-title {
+    .populaires-cards .card {
+        /* ____Rajouté pour corriger la taille du a p/r à la card____ */
+        margin-top: 0px;
+    }
+
+    /* ____Code du Starter-code mais changeant ne correspondent pas/plus à la maquette____ */
+    /* .populaires-cards .card-title {
         font-size: 14px;
     }
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    } */
+
+    /* ____Responsive tablette de activities____ */
+    .activities-card {
+        height: 270px;
     }
+
+    .activities-img {
+        height: 200px;
+    }
+
+    .activities-card .card-title-container {
+        height: 70px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+/* @media (max-width: 767.98px) { */
+/* ... */
+/* } */
+
+@media (max-width: 768px) and (min-width: 320px) {
+  .main-container{
+    padding: 0;
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Taille limite d'affichage du site : 320px */
+@media (max-width:320px) {
+
+    .main-container {
+        display: none;
+    }
+
+    .error-message {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .error-message svg {
+        height: 50px;
+        width: auto;
+    }
+
+    .error-message p {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .error-message p:first-of-type {
+        margin-top: 30px;
+    }
 }
