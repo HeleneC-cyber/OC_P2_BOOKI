@@ -117,7 +117,6 @@ button {
 .search-bar {
     display: flex;
     height: 49px;
-    width: fit-content;
 }
 
 .icon-location {
@@ -132,13 +131,17 @@ button {
 
 .text-location {
     width: 195px;
+    border-top: solid 1px var(--main-bg-color);
+    border-bottom: solid 1px var(--main-bg-color);
+}
+
+.text-location-input {
     font-size: 18px;
     font-weight: 700;
     padding-left: 24px;
-    border-top: solid 1px var(--main-bg-color);
-    border-bottom: solid 1px var(--main-bg-color);
-    border-left: none;
-    border-right: none;
+    border: none;
+    height: 100%;
+    width: 100%;
 }
 
 .btn-location {
@@ -454,6 +457,10 @@ button {
         width: calc(100% - 49px - 24px);
     }
 
+    .text-location-input {
+        width: calc(100% - 24px);
+    }
+
     .btn-location {
         position: absolute;
         right: 0;
@@ -514,7 +521,7 @@ button {
         margin-top: 15px;
     }
 
-    .hebergements {
+    .hebergements-and-populaires .hebergements {
         background-color: transparent;
         padding: 20px;
     }
