@@ -122,7 +122,7 @@ button {
 
 .icon-location {
     background-color: var(--main-bg-color);
-    width: 48px;
+    width: 49px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,12 +165,13 @@ button {
     margin: 35px 0;
 }
 
-.filter-bar ul {
-    display: flex;
+.filter-bar h3 {
+    margin-right: 15px;
 }
 
-.filter-bar ul li {
-    margin-left: 15px;
+.filter-bar ul {
+    display: flex;
+    gap: 15px;
 }
 
 .filter-bar .btn-filter {
@@ -329,7 +330,6 @@ button {
     height: 59px;
     display: flex;
     align-items: center;
-
 }
 
 
@@ -341,10 +341,16 @@ button {
 }
 
 
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
 
     /* ____Responsive tablette de info-group____ */
@@ -354,10 +360,12 @@ button {
 
     .filter-bar ul {
         margin-top: 20px;
+        flex-wrap: wrap;
+        row-gap: 20px;
     }
 
-    .filter-bar ul li:first-child {
-        margin-left: 0;
+    .filter-bar .btn-filter {
+        font-size: 16px;
     }
 
     /* ____Responsive tablette de hebergements-and-populaires____ */
@@ -415,32 +423,131 @@ button {
 
 }
 
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
 /* Small devices (phones, less than 768px) */
 /* @media (max-width: 767.98px) { */
 /* ... */
 /* } */
 
 @media (max-width: 768px) and (min-width: 320px) {
-  .main-container{
-    padding: 0;
-  }  
+    .main-container {
+        padding: 0;
+    }
+
+    /* ____Responsive mobile de info-group____ */
+    .info-group {
+        margin: 0 20px;
+    }
+
+    /* ____Responsive mobile de info-group > Search-bar____ */
+    .search-bar {
+        width: 100%;
+        position: relative;
+    }
+
+    .text-location {
+        width: calc(100% - 49px - 24px);
+    }
+
+    .btn-location {
+        position: absolute;
+        right: 0;
+        border-radius: 15px;
+        padding: 15px 15px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .btn-location span {
+        display: none;
+    }
+
+    .btn-location svg {
+        display: block;
+    }
+
+    /* ____Responsive mobile de info-group > Filter-bar____ */
+    .filter-bar ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 50px;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    .filter-bar .btn-filter {
+        font-size: 14px;
+        padding: 0;
+        width: calc(100% - 4px);
+        height: 46px;
+    }
+
+    .filter-bar .btn-filter svg {
+        margin-left: 19px;
+    }
+
+    /* ____Responsive mobile de hebergement and populaires____ */
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+        padding: 30px 20px;
+    }
+
+    .populaires {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .populaires-cards {
+        margin-top: 0;
+        display: block;
+    }
+
+    .populaires-cards .card {
+        margin-top: 15px;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        background-color: transparent;
+        padding: 20px;
+    }
+
+    .hebergements-cards {
+        margin: 15px 0;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* ____Responsive mobile de hebergement and populaires____ */
+    .activities-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .activities-card {
+        height: 200px;
+    }
+
+    .activities-img {
+        height: 141px;
+    }
+
+    .activities-card .card-title-container {
+        height: 59px;
+    }
+
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* Taille limite d'affichage du site : 320px */
+/* ____Taille limite d'affichage du site : 320px____ */
 @media (max-width:320px) {
 
     .main-container {
