@@ -53,7 +53,7 @@ a {
     color: inherit;
     text-decoration: none;
 }
-
+/* ____Rajouté pour enlever l'espace sous l'image-->inline____ */
 img {
     display: block;
 }
@@ -174,7 +174,7 @@ button {
     gap: 15px;
 }
 
-.filter-bar .btn-filter {
+.btn-filter {
     display: flex;
     align-items: center;
     padding: 15px 19px;
@@ -182,11 +182,11 @@ button {
     border-radius: 25px;
 }
 
-.filter-bar .btn-filter:hover {
+.btn-filter:hover {
     background-color: var(--filter-bg-color);
 }
 
-.filter-bar button svg {
+.btn-filter svg {
     margin-right: 10px;
 }
 
@@ -223,7 +223,7 @@ button {
     width: 65%;
 }
 
-/* ____Hebergement ajout du style du contenu de la section____ */
+/* ____Hebergements ajout du style du contenu de la section____ */
 .hebergements-cards {
     margin: 30px 0;
     display: grid;
@@ -325,7 +325,7 @@ button {
     border-top-right-radius: 20px;
 }
 
-.activities-card .card-title-container {
+.card-title-container {
     padding-left: 19px;
     height: 59px;
     display: flex;
@@ -364,7 +364,7 @@ button {
         row-gap: 20px;
     }
 
-    .filter-bar .btn-filter {
+    .btn-filter {
         font-size: 16px;
     }
 
@@ -417,7 +417,7 @@ button {
         height: 200px;
     }
 
-    .activities-card .card-title-container {
+    .card-title-container {
         height: 70px;
     }
 
@@ -479,14 +479,14 @@ button {
         row-gap: 20px;
     }
 
-    .filter-bar .btn-filter {
+    .btn-filter {
         font-size: 14px;
         padding: 0;
         width: calc(100% - 4px);
         height: 46px;
     }
 
-    .filter-bar .btn-filter svg {
+    .btn-filter svg {
         margin-left: 19px;
     }
 
@@ -514,7 +514,7 @@ button {
         margin-top: 15px;
     }
 
-    .hebergements-and-populaires .hebergements {
+    .hebergements {
         background-color: transparent;
         padding: 20px;
     }
@@ -538,7 +538,7 @@ button {
         height: 141px;
     }
 
-    .activities-card .card-title-container {
+    .card-title-container {
         height: 59px;
     }
 
