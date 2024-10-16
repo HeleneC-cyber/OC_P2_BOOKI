@@ -3,9 +3,6 @@
 @import url(./header.css);
 @import url(./footer.css);
 
-
-
-
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -18,7 +15,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
-    /* rajoutés pour la couleur des textes et bordures : */
+    /* ____rajoutés pour la couleur des textes et bordures :_____ */
     --filter-border-color: #D9D9D9;
     --text-light-color: #FFFFFF;
     --text-dark-color: #000000;
@@ -57,10 +54,6 @@ a {
 img {
     display: block;
 }
-
-/* p {
-    font-size: 16px;
-} */
 
 button {
     background-color: transparent;
@@ -142,6 +135,11 @@ button {
     border: none;
     height: 100%;
     width: 100%;
+    outline: none;
+}
+
+.text-location-input:focus{
+    background-color: none;
 }
 
 .btn-location {
@@ -149,7 +147,6 @@ button {
     padding: 0 15px;
     border: solid 1px var(--main-color);
     border-radius: 0 15px 15px 0;
-
 }
 
 .btn-location span {
@@ -204,9 +201,6 @@ button {
 .info-bar svg {
     margin-right: 10px;
 }
-
-
-
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -299,9 +293,6 @@ button {
     margin-bottom: 5px;
 }
 
-
-
-
 /* ____Section Activités à Marseille____ */
 .activities {
     padding: 30px;
@@ -335,17 +326,10 @@ button {
     align-items: center;
 }
 
-
-
-
 /* ____Message d'erreur pour écran<320px____ */
 .error-message {
     display: none;
 }
-
-
-
-
 
 /* ------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------- */
@@ -425,10 +409,6 @@ button {
     }
 
 }
-
-
-
-
 
 /* ------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------- */
@@ -550,9 +530,6 @@ button {
     }
 
 }
-
-
-
 
 /* ____Taille limite d'affichage du site : 320px____ */
 @media (max-width:320px) {
