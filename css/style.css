@@ -321,7 +321,7 @@ button {
 }
 
 .card-title-container {
-    padding-left: 19px;
+    padding : 0 19px;
     height: 59px;
     display: flex;
     align-items: center;
