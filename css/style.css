@@ -58,6 +58,7 @@ img {
 
 button {
     background-color: transparent;
+    cursor: pointer;
     font-size: 17px;
     font-weight: 700;
 }
