@@ -6,7 +6,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-    /* Rajouté pour tout le site */
+    /* ____Rajouté pour tout le site____ */
     font-size: 16px;
     box-sizing: border-box;
 }
@@ -212,7 +212,7 @@ button {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    /* box-sizing: border-box; */
+    /* box-sizing: border-box; ____retiré car présent sur * (tout le site)____ */
 }
 
 /****** Hebergements ***********/
