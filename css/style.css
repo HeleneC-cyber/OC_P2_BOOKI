@@ -513,7 +513,7 @@ button {
         gap: 15px;
     }
 
-    /* ____Responsive mobile de hebergement and populaires____ */
+    /* ____Responsive mobile de activities____ */
     .activities-cards {
         grid-template-columns: 1fr;
     }
