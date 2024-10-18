@@ -62,7 +62,6 @@ nav li a:hover {
         border-top: none;
         border-bottom: solid 2px var(--main-color);
         padding-bottom: 15px;
-        color: var(--main-color);
     }
 
 }
