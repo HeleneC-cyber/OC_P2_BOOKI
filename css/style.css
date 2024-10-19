@@ -533,7 +533,7 @@ button {
 }
 
 /* ____Taille limite d'affichage du site : 320px____ */
-@media (max-width:320px) {
+@media (max-width:319px) {
 
     .main-container {
         display: none;
