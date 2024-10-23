@@ -57,9 +57,7 @@ img {
 }
 
 button {
-    background-color: transparent;
     cursor: pointer;
-    font-size: 17px;
     font-weight: 700;
 }
 
@@ -180,6 +178,9 @@ button {
     display: flex;
     align-items: center;
     padding: 15px 19px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
     border: solid 2px var(--filter-border-color);
     border-radius: 25px;
 }
