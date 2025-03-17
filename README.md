@@ -14,18 +14,20 @@
 ## 🎞️ Scénario du Projet
 <i>Vous débutez votre alternance en tant que développeuse web au sein de la start-up **Booki**. L'entreprise souhaite développer un site Internet permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix.  
 Votre mission est d'intégrer l'interface du site en **HTML** et **CSS**, en collaboration avec **Sarah**, la CTO, et **Loïc**, l'UI designer.</i>
-<br><br><br>
+<br><br>
 
 ## 🎯 Objectifs du Projet
 - Implémenter une interface **responsive** (HTML/CSS).
 - Intégrer du contenu conformément à une **maquette** fournie.
 - Versionner un projet avec **Git** et **GitHub**.
-<br><br><br>
+<br><br>
 
 ## 💡 Technologies utilisées
 - HTML5
 - CSS3
-<br><br><br>
+<br><br>
+
+![Séparateur coloré](./images/Readme-separation.png)
 
 ## 📂 Structure du Projet
 📁 OC_P2_BOOKI/ │── 📁 images/ │── 📁 styles/ │── index.html │── README.md
@@ -39,7 +41,9 @@ Votre mission est d'intégrer l'interface du site en **HTML** et **CSS**, en col
    ```bash
    cd OC_P2_BOOKI
 2. **Ouvrir** le fichier index.html dans votre navigateur.
-<br><br><br>
+<br><br>
+
+![Séparateur coloré](./images/Readme-separation.png)
 
 ## 💻 Démonstration en ligne
 👉 Voir le site en ligne [ICI](https://helenec-cyber.github.io/OC_P2_BOOKI/)
