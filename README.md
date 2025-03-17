@@ -1,4 +1,4 @@
-# Projet 2 OpenClassrooms - Booki
+# Projet OC 2 - Booki
 
 <i>Travail réalisé lors de la formation "Développeur Web" d'OpenClassrooms.<br>Base du code visible sur la branche Starter-code ou disponible [ICI](https://github.com/OpenClassrooms-Student-Center/booki-starter-code)</i>
 
@@ -31,7 +31,7 @@ Votre mission est d'intégrer l'interface du site en **HTML** et **CSS**, en col
 
 ## 📂 Structure
 📁 OC_P2_BOOKI/ │── 📁 images/ │── 📁 styles/ │── index.html │── README.md
-<br><br><br>
+<br><br>
 
 ## 🚀 Installation
 1. **Cloner** le dépôt GitHub :
@@ -47,7 +47,7 @@ Votre mission est d'intégrer l'interface du site en **HTML** et **CSS**, en col
 
 ## 💻 Démonstration en ligne
 👉 Voir le site en ligne [ICI](https://helenec-cyber.github.io/OC_P2_BOOKI/)
-<br><br><br>
+<br><br>
 
 ## 📝 Notes additionnelles
 - Ce projet est centré sur l'intégration visuelle et non fonctionnelle.
