@@ -30,7 +30,11 @@ Votre mission est d'intégrer l'interface du site en **HTML** et **CSS**, en col
 ![Séparateur coloré](./images/Readme-separation.png)
 
 ## 📂 Structure
-📁 OC_P2_BOOKI/ │── 📁 images/ │── 📁 css/ │── index.html │── README.md
+📁 OC_P2_BOOKI/<br>
+│── 📁 images/<br> 
+│── 📁 css/<br> 
+│── index.html <br>
+│── README.md
 <br><br>
 
 ## 🚀 Installation
