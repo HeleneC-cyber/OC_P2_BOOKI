@@ -40,7 +40,7 @@ Votre mission est d'intégrer l'interface du site en **HTML** et **CSS**, en col
 2. **Naviguer** dans le répertoire du projet :
    ```bash
    cd OC_P2_BOOKI
-2. **Ouvrir** le fichier index.html dans votre navigateur.
+3. **Ouvrir** le fichier index.html dans votre navigateur.
 <br><br>
 
 ![Séparateur coloré](./images/Readme-separation.png)
